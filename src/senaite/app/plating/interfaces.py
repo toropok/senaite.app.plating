@@ -26,6 +26,11 @@ class IPlate(interface.Interface):
     """
 
 
+class IPlateTypes(interface.Interface):
+    """Marker interface for Plate types folder
+    """
+
+
 class IPlateType(interface.Interface):
     """Marker interface for Plate types
     """
