@@ -19,6 +19,7 @@ from bika.lims.catalog import SETUP_CATALOG
 from senaite.core.schema import IntField
 from senaite.core.z3cform.widgets.number import IntFieldWidget
 
+from senaite.app.plating import messageFactory as _
 from senaite.app.plating.interfaces import IPlateType
 
 
@@ -28,18 +29,24 @@ class IPlateTypeSchema(model.Schema):
     directives.widget(
         "rows",
         IntFieldWidget,
+    )
+    rows = IntField(
+        title=_(u"Row counts"),
+        default=8,
         min=1,
         max=48,
     )
-    rows = IntField(default=8)
 
     directives.widget(
         "cols",
         IntFieldWidget,
+    )
+    cols = IntField(
+        title=_(u"Column counts"),
+        default=12,
         min=1,
         max=72,
     )
-    cols = IntField(default=12)
 
 
 @implementer(IPlateType, IPlateTypeSchema)
