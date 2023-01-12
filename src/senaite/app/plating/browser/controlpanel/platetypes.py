@@ -5,18 +5,16 @@
 
 import collections
 
-from bika.lims.utils import get_link_for
 from bika.lims.catalog import SETUP_CATALOG
-
+from bika.lims.utils import get_link_for
 from senaite.app.listing import ListingView
-
 from senaite.app.plating import messageFactory as _
 
 
 class PlateTypesView(ListingView):
     """"""
 
-    def __int__(self, context, request):
+    def __init__(self, context, request):
         super(PlateTypesView, self).__init__(context, request)
 
         # self.catalog = SETUP_CATALOG
