@@ -41,6 +41,13 @@ var/
 wheels/
 *.egg-info/
 *.egg
+src/senaite.core
+src/senaite.lims
+src/senaite.impress
+src/senaite.jsonapi
+src/senaite.app.listing
+src/senaite.app.supermodel
+src/senaite.app.spotlight
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
