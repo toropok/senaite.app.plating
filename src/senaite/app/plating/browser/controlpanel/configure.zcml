@@ -6,11 +6,11 @@
     <include package="bika.lims" file="permissions.zcml" />
 
     <browser:page
-        for="senaite.app.plating.content.platetypes.IPlateTypes"
+        for="senaite.app.plating.interfaces.IPlateTypes"
         name="view"
         class=".platetypes.PlateTypesView"
         permission="senaite.core.permissions.ManageBika"
-        layer="senaite.core.interfaces.ISenaiteCore"
+        layer="senaite.app.plating.interfaces.ISenaitePlatingLayer"
     />
 
 </configure>
