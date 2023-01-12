@@ -3,13 +3,11 @@
 # This file is part of SENAITE.APP.PLATING.
 #
 
-from zope.component import adapter
-
-from z3c.form import interfaces
-
 from senaite.app.plating.interfaces import IPlateUIDReferenceField
-
-from senaite.core.z3cform.widgets.uidreference import UIDReferenceDataConverter
+from senaite.core.z3cform.widgets.uidreference.widget import \
+    UIDReferenceDataConverter
+from z3c.form import interfaces
+from zope.component import adapter
 
 
 @adapter(IPlateUIDReferenceField, interfaces.IWidget)

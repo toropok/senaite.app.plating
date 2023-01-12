@@ -43,7 +43,7 @@
     <property name="add_permission">cmf.AddPortalContent</property>
 
     <!-- Python class for content items of this sort -->
-    <property name="schema">senaite.app.plating.content.platetypes.IPlateTypes</property>
+    <property name="schema">senaite.app.plating.content.platetypes.IPlateTypesSchama</property>
     <property name="klass">senaite.app.plating.content.platetypes.PlateTypes</property>
 
     <!-- Dexterity behaviours for this type -->
