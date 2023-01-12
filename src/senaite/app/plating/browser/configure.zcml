@@ -4,8 +4,6 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:browser="http://namespaces.zope.org/browser">
 
-
-
     <include package=".theme"/>
     <include package=".controlpanel"/>
 
