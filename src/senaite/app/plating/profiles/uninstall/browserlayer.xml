@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+    <!-- Remove Browser Layer -->
+    <layer name="senaite.app.plating"
+           interface="senaite.app.plating.interfaces.ISenaitePlatingLayer"
+           remove="True"/>
+</layers>

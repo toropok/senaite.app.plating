@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<rolemap>
+
+    <permissions>
+
+        <!-- Manage permissions -->
+        <permission name="senaite.app.plating: Manage Plates" acquire="False">
+            <role name="Manager"/>
+            <role name="LabManager"/>
+        </permission>
+
+        <!-- Add permissions -->
+        <permission name="senaite.app.plating: Add Plate Folder" acquire="False">
+            <role name="Manager"/>
+        </permission>
+
+        <permission name="senaite.app.plating: Add Plate" acquire="False">
+            <role name="Analyst"/>
+            <role name="LabManager"/>
+            <role name="Manager"/>
+        </permission>
+
+        <!-- Transition permissions -->
+        <permission name="senaite.app.plating: Transition: Activate" acquire="False">
+            <role name="Analyst"/>
+            <role name="LabManager"/>
+            <role name="Manager"/>
+        </permission>
+
+        <permission name="senaite.app.plating: Transition: Deactivate" acquire="False">
+            <role name="Analyst"/>
+            <role name="LabManager"/>
+            <role name="Manager"/>
+        </permission>
+
+    </permissions>
+
+</rolemap>

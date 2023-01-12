@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<layers>
+    <layer name="senaite.app.plating" interface="senaite.app.plating.interfaces.ISenaitePlatingLayer"/>
+</layers>

@@ -1,0 +1,8 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="senaite.app.plating">
+
+  <!-- Plate Indexes -->
+  <adapter name="plate_searchable_id" factory=".indexers.plate_searchable_id" />
+
+</configure>

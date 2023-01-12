@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml">
+
+    <include package="bika.lims" file="permissions.zcml" />
+
+    <browser:page
+        for="senaite.app.plating.content.platetypes.IPlateTypes"
+        name="view"
+        class=".platetypes.PlateTypesView"
+        permission="senaite.core.permissions.ManageBika"
+        layer="senaite.core.interfaces.ISenaiteCore"
+    />
+
+</configure>

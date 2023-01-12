@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="senaite.app.plating">
+
+    <subscriber
+        for="bika.lims.interfaces.IWorksheet
+             Products.Archetypes.interfaces.IObjectInitializedEvent"
+        handler=".worksheet.worksheet_created_event"
+    />
+
+</configure>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object name="portal_skins" meta_type="Plone Skins Tool" allow_any="False"
+        cookie_persistence="False" default_skin="Plone Default"
+        request_varname="plone_skin">
+
+  <!-- senaite.vetgenomics templates -->
+  <object name="senaite_app_plating_templates"
+          meta_type="Filesystem Directory View"
+          directory="senaite.app.plating:skins/templates"/>
+
+  <skin-path name="*">
+    <layer name="senaite_app_plating_templates" insert-after="custom"/>
+  </skin-path>
+
+</object>

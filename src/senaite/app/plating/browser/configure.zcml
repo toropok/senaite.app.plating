@@ -1,0 +1,34 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="senaite.app.plating"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+
+
+    <include package=".theme"/>
+    <include package=".controlpanel"/>
+
+    <!-- Static directory for js, css and image resources -->
+    <plone:static
+        directory="static"
+        type="plone"
+        name="senaite.app.plating.static"
+    />
+
+    <utility
+        name="plate_layouts_utility"
+        factory=".baseplatelayout.PlatingLayouts"
+        provides="bika.lims.interfaces.IWorksheetLayouts"
+    />
+
+    <!-- Analyses Plate View -->
+    <browser:page
+        for="bika.lims.interfaces.IWorksheet"
+        name="plate_base_view"
+        class="senaite.app.plating.browser.baseplatelayout.PlateBaseView"
+        permission="senaite.core.permissions.ViewResults"
+        layer="senaite.app.plating.interfaces.ISenaitePlatingLayer"
+    />
+
+</configure>

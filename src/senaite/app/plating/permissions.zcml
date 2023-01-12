@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="senaite.app.plating">
+
+  <permission id="senaite.app.plating.permissions.ManagePlates" title="senaite.app.plating: Manage Plates"/>
+  <permission id="senaite.app.plating.permissions.AddPlateFolder" title="senaite.app.plating: Add Plate Folder"/>
+  <permission id="senaite.app.plating.permissions.AddPlate" title="senaite.app.plating: Add Plate"/>
+  <permission id="senaite.app.plating.permissions.ActivatePlate" title="senaite.app.plating: Transition: Activate"/>
+  <permission id="senaite.app.plating.permissions.DeactivatePlate" title="senaite.app.plating: Transition: Deactivate"/>
+
+</configure>

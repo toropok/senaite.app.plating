@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="senaite.app.plating">
+
+    <adapter
+        name="PlateWorksheetSchemaExtender"
+        factory=".worksheet.PlateWorksheetSchemaExtender"
+    />
+    <adapter
+        name="PlateWorksheetSchemaModifier"
+        factory=".worksheet.PlateWorksheetSchemaModifier"
+    />
+
+    <adapter
+        name="PlateTypeSchemaExtender"
+        factory=".worksheettemplate.PlateTypeSchemaExtender"
+    />
+    <adapter
+        name="PlateTypeSchemaModifier"
+        factory=".worksheettemplate.PlateTypeSchemaModifier"
+    />
+
+</configure>
