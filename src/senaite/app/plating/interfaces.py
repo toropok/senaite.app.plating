@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
 from senaite.core.interfaces import ISenaiteCatalogObject
-from senaite.lims.interfaces import ISenaiteLIMS
+from senaite.core.interfaces import ISenaiteCore
 from senaite.core.schema.interfaces import IUIDReferenceField
 from zope.interface import interface
 
 
-class ISenaitePlatingLayer(ISenaiteLIMS):
+class ISenaitePlatingLayer(ISenaiteCore):
     """Senaite Plating Browser Layer Interface
     """
 
